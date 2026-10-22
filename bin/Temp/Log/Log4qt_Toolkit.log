@@ -1,0 +1,137 @@
+[DEBUG]2026-06-23 10:49:44.166 < , line:0 >   "execCommand : pidof Firmware_Updater" 
+[INFO]2026-06-23 10:49:44.216 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 1" 
+[INFO]2026-06-23 10:49:44.216 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 4" 
+[INFO]2026-06-23 10:49:44.226 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 512" 
+[INFO]2026-06-23 10:49:44.229 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 4" 
+[INFO]2026-06-23 10:49:44.234 < MVDeviceTree.cpp, line:1086 >   "CameraName:woho(DA7595438)   To   CameraID:30001" 
+[WARN]2026-06-23 10:49:44.250 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-06-23 10:49:44.252 < , line:0 >   Unknown property font-color 
+[INFO]2026-06-23 10:49:44.321 < MvDevicesEnumThread.cpp, line:56 >   "DeviceSerial: EC99458AAK00082; Netchard: enp4s0[192.168.1.30]" 
+[INFO]2026-06-23 10:49:44.322 < MVDeviceTree.cpp, line:1049 >   "CameraName:R3138MG010(EC99458AAK00082)   To   CameraID:2" 
+[INFO]2026-06-23 10:49:44.332 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 1" 
+[INFO]2026-06-23 10:49:44.346 < MvDevicesEnumThread.cpp, line:56 >   "EnumGenTLInterface count : 0" 
+[INFO]2026-06-23 10:49:46.346 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 512" 
+[DEBUG]2026-06-23 10:49:46.346 < MVDeviceTree.cpp, line:2933 >   HideLoading 
+[DEBUG]2026-06-23 10:49:52.814 < , line:0 >   "execCommand : kill -s 9 9352" 
+[DEBUG]2026-06-23 10:49:58.429 < , line:0 >   "execCommand : pidof Firmware_Updater" 
+[INFO]2026-06-23 10:49:58.483 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 1" 
+[INFO]2026-06-23 10:49:58.483 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 4" 
+[INFO]2026-06-23 10:49:58.493 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 512" 
+[INFO]2026-06-23 10:49:58.495 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 4" 
+[INFO]2026-06-23 10:49:58.502 < MVDeviceTree.cpp, line:1086 >   "CameraName:woho(DA7595438)   To   CameraID:30001" 
+[WARN]2026-06-23 10:49:58.531 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-06-23 10:49:58.533 < , line:0 >   Unknown property font-color 
+[INFO]2026-06-23 10:49:58.589 < MvDevicesEnumThread.cpp, line:56 >   "DeviceSerial: EC99458AAK00082; Netchard: enp4s0[192.168.1.30]" 
+[INFO]2026-06-23 10:49:58.590 < MVDeviceTree.cpp, line:1049 >   "CameraName:R3138MG010(EC99458AAK00082)   To   CameraID:2" 
+[INFO]2026-06-23 10:49:58.599 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 1" 
+[INFO]2026-06-23 10:49:58.618 < MvDevicesEnumThread.cpp, line:56 >   "EnumGenTLInterface count : 0" 
+[INFO]2026-06-23 10:50:00.618 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 512" 
+[DEBUG]2026-06-23 10:50:00.618 < MVDeviceTree.cpp, line:2933 >   HideLoading 
+[WARN]2026-06-23 10:50:01.351 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-06-23 10:50:03.216 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-06-23 10:50:03.981 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-06-23 10:50:04.459 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-06-23 10:50:04.469 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-06-23 10:50:06.231 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-06-23 10:50:06.304 < , line:0 >   "execCommand : kill -s 9 9436" 
+[DEBUG]2026-06-23 11:37:21.134 < , line:0 >   "execCommand : pidof Firmware_Updater" 
+[INFO]2026-06-23 11:37:21.184 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 1" 
+[INFO]2026-06-23 11:37:21.184 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 4" 
+[INFO]2026-06-23 11:37:21.194 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 512" 
+[INFO]2026-06-23 11:37:21.197 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 4" 
+[INFO]2026-06-23 11:37:21.201 < MVDeviceTree.cpp, line:1086 >   "CameraName:woho(DA7595438)   To   CameraID:30001" 
+[WARN]2026-06-23 11:37:21.217 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-06-23 11:37:21.219 < , line:0 >   Unknown property font-color 
+[INFO]2026-06-23 11:37:21.289 < MvDevicesEnumThread.cpp, line:56 >   "DeviceSerial: EC99458AAK00082; Netchard: enp4s0[192.168.1.30]" 
+[INFO]2026-06-23 11:37:21.290 < MVDeviceTree.cpp, line:1049 >   "CameraName:R3138MG010(EC99458AAK00082)   To   CameraID:2" 
+[INFO]2026-06-23 11:37:21.300 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 1" 
+[INFO]2026-06-23 11:37:21.310 < MvDevicesEnumThread.cpp, line:56 >   "EnumGenTLInterface count : 0" 
+[INFO]2026-06-23 11:37:23.310 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 512" 
+[DEBUG]2026-06-23 11:37:23.311 < MVDeviceTree.cpp, line:2933 >   HideLoading 
+[DEBUG]2026-06-23 11:37:31.761 < , line:0 >   "execCommand : kill -s 9 6209" 
+[DEBUG]2026-07-06 17:09:23.690 < , line:0 >   "execCommand : pidof Firmware_Updater" 
+[INFO]2026-07-06 17:09:23.742 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 4" 
+[INFO]2026-07-06 17:09:23.742 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 1" 
+[INFO]2026-07-06 17:09:23.752 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 512" 
+[INFO]2026-07-06 17:09:23.756 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 4" 
+[INFO]2026-07-06 17:09:23.759 < MVDeviceTree.cpp, line:1086 >   "CameraName:woho(DA7595438)   To   CameraID:30001" 
+[WARN]2026-07-06 17:09:23.797 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-07-06 17:09:23.800 < , line:0 >   Unknown property font-color 
+[INFO]2026-07-06 17:09:23.848 < MvDevicesEnumThread.cpp, line:56 >   "DeviceSerial: EC99458AAK00082; Netchard: enp4s0[192.168.1.30]" 
+[INFO]2026-07-06 17:09:23.849 < MVDeviceTree.cpp, line:1049 >   "CameraName:R3138MG010(EC99458AAK00082)   To   CameraID:2" 
+[INFO]2026-07-06 17:09:23.859 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 1" 
+[INFO]2026-07-06 17:09:23.875 < MvDevicesEnumThread.cpp, line:56 >   "EnumGenTLInterface count : 0" 
+[INFO]2026-07-06 17:09:25.875 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 512" 
+[DEBUG]2026-07-06 17:09:25.875 < MVDeviceTree.cpp, line:2933 >   HideLoading 
+[WARN]2026-07-06 17:09:33.704 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:09:35.570 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:09:35.818 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:09:35.898 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:09:36.003 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:09:36.017 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:10:00.915 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:10:00.916 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-07-06 17:10:25.374 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-07-06 17:10:25.463 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.463 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.463 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.463 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.466 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.466 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.466 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.466 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.474 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.474 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.474 < , line:0 >   Unknown property hight 
+[DEBUG]2026-07-06 17:10:25.476 < , line:0 >   Unknown property hight 
+[INFO]2026-07-06 17:10:36.361 < qupgradethread.cpp, line:86 >   ExecCameraUpgrade :  "/home/shansu/Desktop/DZP20260625127_MV_CS120_10UC_V5_NEU_V4.5.7_260702/mv_digicap.dav" 
+[ERROR]2026-07-06 17:10:36.370 < qupgradethread.cpp, line:197 >   "MV_CC_GetBoardDeviceType failed.(Error Code : 0x80000003)" 
+[INFO]2026-07-06 17:11:13.000 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 4" 
+[INFO]2026-07-06 17:11:13.000 < MVDeviceTree.cpp, line:2824 >   CameraName: "woho"   To   CameraID: 30001 
+[INFO]2026-07-06 17:11:13.003 < MvDevicesEnumThread.cpp, line:56 >   "Begin Enum Devices; CameraType: 1" 
+[INFO]2026-07-06 17:11:13.010 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 4" 
+[INFO]2026-07-06 17:11:13.108 < MvDevicesEnumThread.cpp, line:56 >   "DeviceSerial: EC99458AAK00082; Netchard: enp4s0[192.168.1.30]" 
+[INFO]2026-07-06 17:11:13.119 < MvDevicesEnumThread.cpp, line:56 >   "End Enum Devices; CameraType: 1" 
+[DEBUG]2026-07-06 17:11:20.448 < , line:0 >   "execCommand : kill -s 9 13880" 
+[DEBUG]2026-08-19 11:21:26.206 < , line:0 >   "execCommand : pidof MvToolkit" 
+[DEBUG]2026-08-19 11:21:26.255 < , line:0 >   Unknown property hight 
+[DEBUG]2026-08-19 11:21:26.268 < , line:0 >   Unknown property order 
+[DEBUG]2026-08-19 11:21:26.272 < , line:0 >   Unknown property hight 
+[DEBUG]2026-08-19 11:21:26.272 < , line:0 >   Unknown property order 
+[DEBUG]2026-08-19 11:21:26.273 < , line:0 >   Unknown property hight 
+[DEBUG]2026-08-19 11:21:26.281 < , line:0 >   Unknown property order 
+[DEBUG]2026-08-19 11:21:26.282 < , line:0 >   Unknown property order 
+[DEBUG]2026-08-19 11:21:26.336 < , line:0 >   Unknown property order 
+[DEBUG]2026-08-19 11:21:26.342 < , line:0 >   Unknown property order 
+[DEBUG]2026-08-19 11:21:26.511 < , line:0 >   Unknown property order 
+[WARN]2026-08-19 11:21:26.516 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-08-19 11:21:26.517 < , line:0 >   Unknown property order 
+[WARN]2026-08-19 11:21:26.751 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:29.457 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:29.915 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-08-19 11:21:32.996 < , line:0 >   Unknown property order 
+[DEBUG]2026-08-19 11:21:32.996 < , line:0 >   Unknown property order 
+[WARN]2026-08-19 11:21:32.997 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-08-19 11:21:32.997 < , line:0 >   Unknown property order 
+[WARN]2026-08-19 11:21:33.617 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:34.613 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:35.905 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:36.140 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:36.407 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:37.048 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:37.282 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:38.458 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:39.207 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:39.530 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:21:40.085 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-08-19 11:21:56.103 < , line:0 >   Unknown property order 
+[WARN]2026-08-19 11:21:57.512 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:22:22.376 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:22:24.657 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:22:33.218 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:22:35.495 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:55:46.362 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:55:47.403 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:55:47.658 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[WARN]2026-08-19 11:55:48.568 < , line:0 >   QFont::setPixelSize: Pixel size <= 0 (-1) 
+[DEBUG]2026-08-19 11:55:48.808 < , line:0 >   "execCommand : kill -s 9 5472" 

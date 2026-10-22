@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GuideConfig>
+    <VersionInfo>
+        <Version_CN>V5.0版本更新</Version_CN>
+		<Version_EN>V5.0 Update</Version_EN>
+        <BackgroundImage>GuidePagebg.svg</BackgroundImage>
+    </VersionInfo>
+    
+    <GuideItem>
+        <ListItemTitle_CN>设备参数对比</ListItemTitle_CN>
+		<ListItemTitle_EN>Device Parameter Comparison</ListItemTitle_EN>		
+        <PageTitle_CN>设备参数对比功能</PageTitle_CN>
+		<PageTitle_EN>Device Parameter Comparison</PageTitle_EN>		
+        <Content_CN>连接多台设备后，可通过属性比较功能查看任意两台设备的属性及属性值是否一致，支持多设备参数并行显示，便于性能分析与参数调优。</Content_CN>
+		<Content_EN>After connecting multiple devices, you can use the parameter comparison feature to check consistency between any 2 devices (cameras or frame grabbers). It supports parallel display of multi-device parameters, helping you adjust parameters and analyze performance.</Content_EN>	
+        <ImagePath>Guidance2.png</ImagePath>
+    </GuideItem>
+    <GuideItem>
+        <ListItemTitle_CN>长度测量</ListItemTitle_CN>
+		<ListItemTitle_EN>Length Measurement</ListItemTitle_EN>		
+        <PageTitle_CN>长度测量</PageTitle_CN>
+		<PageTitle_EN>Length Measurement</PageTitle_EN>
+        <Content_CN>新增图像长度测量功能，支持连续测量并调整线段颜色和粗细，同时支持根据像素距离和实际物理距离进行标定与转换，提升测量准确性。</Content_CN>
+		<Content_EN>Adds image length measurement function. You can adjust the line color and thickness, perform continuous measurement, and calibrate the conversion between pixels and physical units.</Content_EN>			
+        <ImagePath>Guidance3.png</ImagePath>
+    </GuideItem>
+    <GuideItem>
+        <ListItemTitle_CN>设备分组</ListItemTitle_CN>
+		<ListItemTitle_EN>Device Grouping</ListItemTitle_EN>
+        <PageTitle_CN>设备分组</PageTitle_CN>
+		<PageTitle_EN>Device Grouping</PageTitle_EN>
+        <Content_CN>当设备列表下多个接口连接了多个设备，支持自定义设备分组功能，可将不同接口的设备归入同一组别。分组后，您可对组内所有设备进行统一管理与批量操作，提高使用的灵活性。</Content_CN>
+		<Content_EN>When devices are connected to different interfaces in the device list, you can use the device grouping feature to add devices under different interfaces to the same group. This helps you manage and perform batch operations on devices within the same group. After grouping, you can manage all devices in the group uniformly, enhancing flexibility in usage.</Content_EN>
+        <ImagePath>Guidance6.png</ImagePath>
+    </GuideItem>	
+    <GuideItem>
+		<ListItemTitle_CN>刻度尺显示</ListItemTitle_CN>
+		<ListItemTitle_EN>Ruler Display</ListItemTitle_EN>		
+		<PageTitle_CN>刻度尺显示</PageTitle_CN>
+		<PageTitle_EN>Ruler Display</PageTitle_EN>			
+		<Content_CN>客户端支持在图像预览窗口左侧和上方显示刻度尺，可提供直观的尺寸参考，便于精确测量。刻度尺默认以像素为单位，支持切换为毫米单位。您还可根据实际需求，在界面中调整刻度尺的颜色和粗细。</Content_CN>
+		<Content_EN>The client supports displaying rulers on the left and top sides of the image display window, providing an intuitive size reference for precise measurements. The ruler unit defaults to pixels, and you can switch to millimeters, adjust the color and thickness as required.</Content_EN>			
+		<ImagePath>Guidance4.png</ImagePath>
+    </GuideItem>
+    <GuideItem>
+        <ListItemTitle_CN>错误码查询工具</ListItemTitle_CN>
+		<ListItemTitle_EN>Error Code Query Tool</ListItemTitle_EN>		
+        <PageTitle_CN>错误码查询工具</PageTitle_CN>
+		<PageTitle_EN>Error Code Query Tool</PageTitle_EN>			
+        <Content_CN>Windows版本集成错误码查询工具，该工具支持查询 MVS 中的错误码，您可查看错误码的具体含义和对应解决方案，弹窗报错时，点击查询后自动弹出错误码查询工具并显示错误信息。</Content_CN>
+        <Content_EN>The Windows version introduces an error code query tool, which supports looking up error codes in the client. You can view the specific meaning of an error code and its corresponding solution. When an error pop-up appears, click "Query" to open the error code query tool and view the error information.</Content_EN>			
+        <ImagePath>Guidance5.png</ImagePath>
+    </GuideItem>
+	    <GuideItem>
+        <ListItemTitle_CN>支持陀螺仪功能</ListItemTitle_CN>
+		<ListItemTitle_EN>Gyroscope Support</ListItemTitle_EN>
+        <PageTitle_CN>陀螺仪功能</PageTitle_CN>
+		<PageTitle_EN>Gyroscope Support</PageTitle_EN>
+        <Content_CN>若设备支持陀螺仪功能，您可单击高级属性中的设备姿态的执行打开姿态弹窗，以实时查看相机的正视图、侧视图、俯视图和对应数值。</Content_CN>
+		<Content_EN>If the device supports gyroscope, you can click "Execute" under device attitude in the advanced features to open the orientation view tool. In the tool, you can view real-time orientation data, including front, side, and top views with corresponding numerical values.</Content_EN>
+        <ImagePath>Guidance1.png</ImagePath>
+    </GuideItem>
+	<GuideItem>
+	    <ListItemTitle_CN>其它功能</ListItemTitle_CN>
+		<ListItemTitle_EN>Other Function</ListItemTitle_EN>		
+		<Content_CN>1. 支持分时频闪功能及纵向合成图显示</Content_CN>
+        <Content_EN>1. Supports time-division strobe and vertical composite image display.</Content_EN>			
+		<Content_CN>   预览工具栏新增图像合并/拆分功能，支持子图组合与分离操作</Content_CN>
+        <Content_EN>   Adds image merge/split function in image display toolbar for sub-image combination and separation.</Content_EN>			
+		<Content_CN>2. IO监控工具功能优化</Content_CN>
+        <Content_EN>2. Optimizes IO Monitoring Tool</Content_EN>
+		<Content_CN>   自动计算多锚点时间差，支持信号边缘自动吸附功能</Content_CN>
+        <Content_EN>   Automatically calculates multi-anchor time differences with signal edge auto-snap functionality.</Content_EN>			
+		<Content_CN>3. 支持CIS相机</Content_CN>
+        <Content_EN>3. Supports Connection and Operation of CIS Cameras</Content_EN>			
+		<Content_CN>   优化拼接相关节点显示，采用独立窗口展示属性树节点</Content_CN>
+        <Content_EN>   Optimizes stitching node display with independent property tree window.</Content_EN>
+		<Content_CN>   优化拼接模式节点显示，提升操作直观性</Content_CN>
+        <Content_EN>   Enhances stitching mode node display for improved operational intuitiveness.</Content_EN>	
+		<Content_CN>4. 客户端分辨率自适应</Content_CN>
+        <Content_EN>4. Adapts Windows Client to Multiple Resolutions</Content_EN>			
+		<Content_CN>   MVS客户端支持多分辨率自适应，确保显示比例合理，提升兼容性</Content_CN>
+        <Content_EN>   Client supports multi-resolution adaptation for optimal display proportions and enhanced compatibility.</Content_EN>	
+		<Content_CN>5. LUT曲线编辑功能增强</Content_CN>
+        <Content_EN>5. Enhances LUT Curve Editing</Content_EN>			
+		<Content_CN>   LUT折线/曲线图支持采样点动态调整，新增线性切换功能</Content_CN>
+        <Content_EN>   LUT polyline/curve graphs support dynamic sampling point adjustment with linear switching capability.</Content_EN>		
+		<Content_CN>6. 平场校正工具升级</Content_CN>
+		<Content_EN>6. Upgrades Flat-Field Correction Tool</Content_EN>
+		<Content_CN>   扩展支持Bayer和RGB图像校正，新增算法参数配置功能</Content_CN>
+		<Content_EN>   The tool supports Bayer and RGB image correction, adding algorithm parameter configuration.</Content_EN>			
+		<Content_CN>7. 直方图功能优化</Content_CN>
+		<Content_EN>7. Optimizes Histogram Function</Content_EN>
+		<Content_CN>   采用折线图显示灰度直方图，提升统计计算速度和显示效果</Content_CN>
+		<Content_EN>   Grayscale histograms are now displayed as line charts. This improves calculation efficiency and visualization effect.</Content_EN>
+		<Content_CN>8. 新增设备树网口驱动状态指示图标</Content_CN>
+		<Content_EN>8. Adds Network Port Driver Status Indicator</Content_EN>
+		<Content_CN>   GigE分组新增驱动安装状态可视化标识，便于快速诊断</Content_CN>
+		<Content_EN>   Adds a visualized driver installation status indicator in the GigE group for quick diagnostics</Content_EN>
+		<Content_CN>9. 虚拟设备工具更新</Content_CN>
+		<Content_EN>9. Updates Virtual Device Tool</Content_EN>
+		<Content_CN>   新增同轴相机等设备型号支持</Content_CN>
+		<Content_EN>   Supports new device models including coaxial cameras.</Content_EN>	
+	</GuideItem>
+</GuideConfig>

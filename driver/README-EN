@@ -1,0 +1,20 @@
+Industrial Camera Linux Driver Installation and Uninstallation Guide  
+===========================================================================
+
+Driver Installation and Uninstallation:  
+===========================================================================  
+(1) After installing the client, the drivers are located in the `/opt/(software name)/driver` directory.  
+(2) Driver Installation: The installation method is the same for both GigE and PCIe drivers. The `gige` folder contains the filter driver, while the `pcie` folder contains the frame grabber driver. First, navigate to the `gige` or `pcie` directory, execute `sudo bash build.sh`, and then run `sudo bash load.sh`.  
+(3) Driver Uninstallation: The uninstallation method is the same for both GigE and PCIe drivers. First, navigate to the `gige` or `pcie` directory and execute `sudo bash unload.sh`.  
+===========================================================================
+
+Method to Check if the Installation is Successful:  
+===========================================================================  
+(1) Execute the `lsmod` command and check if the following modules are present:  
+    Modules:  
+    ├── gevfilter (Filter Driver)  
+    ├── gevframegrabber (GigE Frame Grabber Driver)  
+    ├── cxpframegrabber (CXP Frame Grabber Driver)  
+    ├── cmlframegrabber (CML Frame Grabber Driver)  
+    ├── xofframegrabber (XOF Frame Grabber Driver)  
+    └── lightcontroller (Light Controller Driver)

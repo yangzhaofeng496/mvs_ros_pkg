@@ -1,0 +1,1 @@
+cmd_/opt/MVS/driver/pcie/TransportLayer/lightcontroller/modules.order := {   echo /opt/MVS/driver/pcie/TransportLayer/lightcontroller/lightcontroller.ko; :; } | awk '!x[$$0]++' - > /opt/MVS/driver/pcie/TransportLayer/lightcontroller/modules.order

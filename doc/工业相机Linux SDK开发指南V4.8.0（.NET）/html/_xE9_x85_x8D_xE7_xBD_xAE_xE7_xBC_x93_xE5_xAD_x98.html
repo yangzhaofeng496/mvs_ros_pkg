@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="custom-style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+	<div style="overflow: hidden;">
+		<div style="height: 57px;min-width: 1039px;background-size: auto 100%;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwgAAAABCAYAAADKO/rAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABRSURBVFhH7dUxCoBADEXB5LK5/w1iIaLIrsgWNs50Sf/4WVUd8HOZGd1nCqMbGNMPrNMPrJv1cvz0A3OjfuwPvDPrxf7A7t7IlX7gmX74VsQGguw4S6+UnSYAAAAASUVORK5CYII=');">
+			<img src="titleleft.png" style="float: left;"/>
+			<img src="titleright.png" alt="" style="float: right;" />
+		</div>
+	</div>
+<!-- 制作者 Doxygen 1.8.15 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="_xE5_x8F_x91_xE7_x89_x88_xE8_xAF_xB4_xE6_x98_x8E.html"><span>发版说明</span></a></li>
+      <li><a href="usergroup0.html"><span>编程引导</span></a></li>
+      <li><a href="modules.html"><span>API参考</span></a></li>
+      <li><a href="_xE7_x9B_xB8_xE6_x9C_xBA_xE5_x8F_x82_xE6_x95_xB0_xE8_x8A_x82_xE7_x82_xB9_xE8_xA1_xA8.html"><span>相机参数节点表</span></a></li>
+      <li><a href="_xE7_xA4_xBA_xE4_xBE_x8B_xE7_xA8_x8B_xE5_xBA_x8F_xE6_xA6_x82_xE8_xA7_x88.html"><span>示例程序概览</span></a></li>
+      <li><a href="_xE6_xB3_x95_xE5_xBE_x8B_xE5_xA3_xB0_xE6_x98_x8E.html"><span>法律声明</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div class="title">配置缓存</div> </div> </div> <div id="shortdesc"> <br />
+ </div><div id="shortdesc">SDK支持如下两种缓存配置的方式。您可按需选择。</div><div id="shortdesc"> <ul>
+<li>
+<a href="#internal">SDK内部分配缓存</a>：SDK内部主动分配图像缓存，用于获取图像数据。 </li>
+<li>
+<a href="#external">外部注册缓存</a>：您需自行分配多个缓存，之后通过SDK接口将分配的缓存注册到SDK内部。SDK使用您注册的缓存获取图像数据。 </li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>外部注册缓存需要主动调用接口注册，默认使用SDK内部缓存。</dd></dl>
+<div> <div id="internal"> <a class="anchor" id="配置缓存internal"></a> <div class="mainparams"> <h2>SDK内部分配缓存</h2>
+</div></div></div></div><div id="shortdesc"><div><div id="internal"><div class="mainparams"> </div> <div class="subparamswhite"> </div></div></div></div><div id="shortdesc"><div><div id="internal"><div class="subparamswhite">您可通过 <a class="el" href="interface_i_stream_grabber.html#a34f0db3e83dd83661f500b305c7bdf93" title="设置SDK内部图像缓存节点个数，大于等于1，在 IStreamGrabber.StartGrabbing() 前调用">IStreamGrabber.SetImageNodeNum()</a> 设置SDK内部图像缓存节点个数。未设置缓存节点个数时，SDK使用默认的缓存个数。</div></div></div></div><div id="shortdesc"><div><div id="internal"><div class="subparamswhite"> <dl class="section note"><dt>注解</dt><dd><a class="el" href="interface_i_stream_grabber.html#a34f0db3e83dd83661f500b305c7bdf93" title="设置SDK内部图像缓存节点个数，大于等于1，在 IStreamGrabber.StartGrabbing() 前调用">IStreamGrabber.SetImageNodeNum()</a> 需要在 <a class="el" href="interface_i_stream_grabber.html#a3a77e754ee97eea5dc9b453aa2294cb1" title="开始取流">IStreamGrabber.StartGrabbing()</a> 之前调用。</dd></dl>
+</div></div></div></div><div id="shortdesc"><div><div id="internal"><div class="subparamswhite"> </div></div></div></div><div id="shortdesc"><div><div id="internal"><div class="subparamswhite">如下代码演示了使用内部缓存获取图像数据的过程。</div></div></div></div><div id="shortdesc"><div><div id="internal"><div class="subparamswhite"> <div class="fragment"><div class="line"><span class="comment">// 设置缓存节点个数（可选）</span></div><div class="line">device.StreamGrabber.SetImageNodeNum(5);</div><div class="line"></div><div class="line"><span class="comment">// 开始取流</span></div><div class="line"><span class="keywordtype">int</span> result = device.StreamGrabber.StartGrabbing();</div><div class="line"><span class="keywordflow">if</span> (result != <a class="code" href="class_mv_error.html">MvError</a>.<a class="code" href="class_mv_error.html#aae781ef0f6a59940c564cc5bcaac1792">MV_OK</a>)</div><div class="line">{</div><div class="line">    Console.WriteLine(<span class="stringliteral">&quot;Start grabbing failed:{0:x8}&quot;</span>, result);</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">}</div></div><!-- fragment --> </div> </div></div></div><div id="shortdesc"><div> <div id="external"> <a class="anchor" id="配置缓存external"></a> <div class="mainparams"> <h2>外部注册缓存</h2>
+</div></div></div></div><div id="shortdesc"><div><div id="external"><div class="mainparams"> </div> <div class="subparamswhite"> </div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite">外部注册缓存是指您自行分配和释放图像缓存。</div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite"> </div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite">外部注册缓存的基本步骤如下：</div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite"> <ol>
+<li>
+调用 <a class="el" href="interface_i_stream_grabber.html#a1fd86fc02b5c1e676a08a3ddee9ec05c" title="获取设备payload大小（payload包含图像数据和Chunk数据）和内存对其方式，用于SDK外部注册缓存时，应用层分配足够的缓存及正确的内存对齐方式">IStreamGrabber.GetPayloadSize()</a> 获取足够的缓存大小及正确的内存对齐方式。 <dl class="section note"><dt>注解</dt><dd>在您修改图像相关参数（例如修改图像宽度、高度和像素格式等）后，您需重新调用该接口，重新获取缓存大小。  </dd></dl>
+</li>
+<li>
+调用 <a class="el" href="interface_i_stream_grabber.html#a42700d36023cab634ca492919a163f95" title="分配对齐的内存缓冲区">IStreamGrabber.AllocAlignedBuffer()</a> 分配内存。 </li>
+<li>
+调用 <a class="el" href="interface_i_stream_grabber.html#a29a1210b972a06a77ac1f809eed90a8b" title="应用程序分配缓存，并注册到SDK内部，供SDK使用">IStreamGrabber.RegisterBuffer()</a> 将分配好的内存注册给SDK。 </li>
+<li>
+调用 <a class="el" href="interface_i_stream_grabber.html#a3a77e754ee97eea5dc9b453aa2294cb1" title="开始取流">IStreamGrabber.StartGrabbing()</a> 开始采集图像。 </li>
+</ol>
+</div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite"> </div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite">结束采集后，您需取消已注册的缓存。步骤如下：</div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite"> <ol>
+<li>
+调用 <a class="el" href="interface_i_stream_grabber.html#ad1d6d7049d5e3cd7f309571e162f0af8" title="外部内存取消注册">IStreamGrabber.UnRegisterBuffer()</a> 取消已经注册的缓存。 </li>
+<li>
+调用 <a class="el" href="interface_i_stream_grabber.html#a00b30c3ab42b2c88b83ff3f7b849fcce" title="释放对齐的内存缓冲区">IStreamGrabber.FreeAlignedBuffer()</a> 释放缓存 <dl class="section note"><dt>注解</dt><dd><ul>
+<li><a class="el" href="interface_i_stream_grabber.html#a3a77e754ee97eea5dc9b453aa2294cb1" title="开始取流">IStreamGrabber.StartGrabbing()</a> 前必须注册外部缓存，否则按照内部缓存取图。 <br />
+ </li>
+<li>支持动态缓存注册，在 <a class="el" href="interface_i_stream_grabber.html#a3a77e754ee97eea5dc9b453aa2294cb1" title="开始取流">IStreamGrabber.StartGrabbing()</a> 开始采集后，支持多次调用 <a class="el" href="interface_i_stream_grabber.html#a29a1210b972a06a77ac1f809eed90a8b" title="应用程序分配缓存，并注册到SDK内部，供SDK使用">IStreamGrabber.RegisterBuffer()</a> 注册缓存和 <a class="el" href="interface_i_stream_grabber.html#ad1d6d7049d5e3cd7f309571e162f0af8" title="外部内存取消注册">IStreamGrabber.UnRegisterBuffer()</a> 取消注册。 <br />
+ </li>
+<li>注册的缓存可用于主动取图和回调取图。 <br />
+ </li>
+</ul>
+</dd></dl>
+</li>
+</ol>
+</div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite"><div class="fragment"><div class="line"><span class="comment">// 获取当前配置情况下图像的负载信息 </span></div><div class="line">UInt64 bufLen;</div><div class="line">UInt32 alignment;</div><div class="line">result = device.StreamGrabber.GetPayloadSize(out bufLen, out alignment);</div><div class="line"><span class="keywordflow">if</span> (result != <a class="code" href="class_mv_error.html">MvError</a>.<a class="code" href="class_mv_error.html#aae781ef0f6a59940c564cc5bcaac1792">MV_OK</a>)</div><div class="line">{</div><div class="line">    Console.WriteLine(<span class="stringliteral">&quot;Getting payload size failed:{0:x8}&quot;</span>, result);</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">}</div><div class="line"></div><div class="line">IntPtr[] pBufferList = <span class="keyword">new</span> IntPtr[IMAGE_NODE];</div><div class="line"></div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; IMAGE_NODE; k++)</div><div class="line">{</div><div class="line">    <span class="comment">// 用户分配的内存</span></div><div class="line">    pBufferList[k] = device.StreamGrabber.AllocAlignedBuffer(bufLen, alignment);</div><div class="line">    <span class="keywordflow">if</span> (pBufferList[k] == IntPtr.Zero)</div><div class="line">    {</div><div class="line">        result = (int)MV_E_RESOURCE;</div><div class="line">        <span class="keywordflow">return</span>;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// 用户分配的内存注册到SDK中</span></div><div class="line">    result = device.StreamGrabber.RegisterBuffer(pBufferList[k], bufLen, IntPtr.Zero);</div><div class="line">    <span class="keywordflow">if</span> (result != <a class="code" href="class_mv_error.html">MvError</a>.<a class="code" href="class_mv_error.html#aae781ef0f6a59940c564cc5bcaac1792">MV_OK</a>)</div><div class="line">    {   </div><div class="line">        Console.WriteLine(<span class="stringliteral">&quot;Registering buffer failed:{0:x8}&quot;</span>, result);</div><div class="line">        <span class="keywordflow">return</span>;</div><div class="line">    }</div><div class="line">    </div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// 开始取流</span></div><div class="line">result = device.StreamGrabber.StartGrabbing();</div><div class="line"><span class="keywordflow">if</span> (result != <a class="code" href="class_mv_error.html">MvError</a>.<a class="code" href="class_mv_error.html#aae781ef0f6a59940c564cc5bcaac1792">MV_OK</a>)</div><div class="line">{</div><div class="line">    Console.WriteLine(<span class="stringliteral">&quot;Start grabbing failed:{0:x8}&quot;</span>, result);</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">//获取图像</span></div><div class="line"><span class="comment">//do something</span></div><div class="line"></div><div class="line"><span class="comment">// 停止取流</span></div><div class="line">result = device.StreamGrabber.StopGrabbing();</div><div class="line"><span class="keywordflow">if</span> (result != <a class="code" href="class_mv_error.html">MvError</a>.<a class="code" href="class_mv_error.html#aae781ef0f6a59940c564cc5bcaac1792">MV_OK</a>)</div><div class="line">{</div><div class="line">    Console.WriteLine(<span class="stringliteral">&quot;Stop grabbing failed:{0:x8}&quot;</span>, result);</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; IMAGE_NODE; k++)</div><div class="line">{</div><div class="line">    <span class="comment">// 取消SDK中注册的外部缓存</span></div><div class="line">    result = device.StreamGrabber.UnRegisterBuffer(pBufferList[k]);</div><div class="line">    <span class="keywordflow">if</span> (result != <a class="code" href="class_mv_error.html">MvError</a>.<a class="code" href="class_mv_error.html#aae781ef0f6a59940c564cc5bcaac1792">MV_OK</a>)</div><div class="line">    {</div><div class="line">        Console.WriteLine(<span class="stringliteral">&quot;Unregistering buffer failed:{0:x8}&quot;</span>, result);</div><div class="line">        <span class="keywordflow">return</span>;</div><div class="line">    }</div><div class="line">}</div><div class="line"><span class="keywordflow">if</span> (result != <a class="code" href="class_mv_error.html">MvError</a>.<a class="code" href="class_mv_error.html#aae781ef0f6a59940c564cc5bcaac1792">MV_OK</a>)</div><div class="line">{</div><div class="line">    Console.WriteLine(<span class="stringliteral">&quot;Unregistering buffer failed:{0:x8}&quot;</span>, result);</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// 释放用户分配的内存</span></div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; IMAGE_NODE; k++)</div><div class="line">{</div><div class="line">    <span class="keywordflow">if</span> (pBufferList[k] != IntPtr.Zero)</div><div class="line">    {</div><div class="line">        device.StreamGrabber.FreeAlignedBuffer(pBufferList[k]);</div><div class="line">        pBufferList[k] = IntPtr.Zero;</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment --></div></div></div></div><div id="shortdesc"><div><div id="external"><div class="subparamswhite"> </div> </div> </div> </div></div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<div class="footer" style="text-align: right;">
+	<hr/>
+	<small></small>
+</div>
+</body>
+</html>
