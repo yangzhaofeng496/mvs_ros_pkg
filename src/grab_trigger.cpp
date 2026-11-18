@@ -350,7 +350,7 @@ int main(int argc, char **argv)
   trigger_enable = Params["TriggerEnable"];
   std::string expect_serial_number = Params["SerialNumber"];
   std::string pub_topic = Params["TopicName"];
-  int PixelFormat = Params["PixelFormat"];
+  int pixel_format_index = Params["PixelFormat"];
 
   image_pub = it.advertiseCamera(pub_topic, 1000);
 
@@ -418,11 +418,45 @@ int main(int argc, char **argv)
   }
 
 
-  nRet = MV_CC_SetEnumValue(handle, "PixelFormat", PIXEL_FORMAT[PixelFormat]); // BayerRG8 0x01080009 RGB8 0x02180014 BayerRG12Packed 0x010C002B
+  if (pixel_format_index < 0 ||
+      pixel_format_index >= static_cast<int>(PIXEL_FORMAT.size()))
+  {
+    printf("Invalid PixelFormat index: %d\n", pixel_format_index);
+    MV_CC_CloseDevice(handle);
+    MV_CC_DestroyHandle(handle);
+    return -1;
+  }
+
+  nRet = MV_CC_SetEnumValue(handle, "PixelFormat", PIXEL_FORMAT[pixel_format_index]); // BayerRG8 0x01080009 RGB8 0x02180014 BayerRG12Packed 0x010C002B
   if (nRet != MV_OK)
   {
-    printf("Pixel setting can't work.");
-    return -1;
+    printf("Pixel setting index %d failed, nRet [0x%x]. Trying fallbacks...\n",
+           pixel_format_index, nRet);
+
+    const int fallback_formats[] = {1, 0, 2, 3};
+    bool fallback_set = false;
+    for (int fallback_index : fallback_formats)
+    {
+      if (fallback_index == pixel_format_index)
+        continue;
+
+      nRet = MV_CC_SetEnumValue(handle, "PixelFormat", PIXEL_FORMAT[fallback_index]);
+      if (nRet == MV_OK)
+      {
+        printf("Using fallback PixelFormat index %d.\n", fallback_index);
+        pixel_format_index = fallback_index;
+        fallback_set = true;
+        break;
+      }
+    }
+
+    if (!fallback_set)
+    {
+      printf("No supported PixelFormat was accepted by the camera.\n");
+      MV_CC_CloseDevice(handle);
+      MV_CC_DestroyHandle(handle);
+      return -1;
+    }
   }
 
   setParams(handle, params_file);
