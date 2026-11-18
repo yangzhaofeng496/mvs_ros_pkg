@@ -427,37 +427,53 @@ int main(int argc, char **argv)
     return -1;
   }
 
-  nRet = MV_CC_SetEnumValue(handle, "PixelFormat", PIXEL_FORMAT[pixel_format_index]); // BayerRG8 0x01080009 RGB8 0x02180014 BayerRG12Packed 0x010C002B
-  if (nRet != MV_OK)
+  MVCC_ENUMVALUE_EX supported_pixel_formats = {};
+  nRet = MV_CC_GetEnumValueEx(handle, "PixelFormat", &supported_pixel_formats);
+  if (nRet != MV_OK || supported_pixel_formats.nSupportedNum == 0)
   {
-    printf("Pixel setting index %d failed, nRet [0x%x]. Trying fallbacks...\n",
-           pixel_format_index, nRet);
+    printf("Cannot query supported PixelFormat values, nRet [0x%x].\n", nRet);
+    MV_CC_CloseDevice(handle);
+    MV_CC_DestroyHandle(handle);
+    return -1;
+  }
 
-    const int fallback_formats[] = {1, 0, 2, 3};
-    bool fallback_set = false;
-    for (int fallback_index : fallback_formats)
+  const unsigned int requested_pixel_format = PIXEL_FORMAT[pixel_format_index];
+  unsigned int selected_pixel_format = 0;
+  bool pixel_format_set = false;
+
+  auto try_set_pixel_format = [&](unsigned int pixel_format) {
+    int result = MV_CC_SetEnumValue(handle, "PixelFormat", pixel_format);
+    if (result == MV_OK)
     {
-      if (fallback_index == pixel_format_index)
-        continue;
-
-      nRet = MV_CC_SetEnumValue(handle, "PixelFormat", PIXEL_FORMAT[fallback_index]);
-      if (nRet == MV_OK)
-      {
-        printf("Using fallback PixelFormat index %d.\n", fallback_index);
-        pixel_format_index = fallback_index;
-        fallback_set = true;
-        break;
-      }
+      selected_pixel_format = pixel_format;
+      pixel_format_set = true;
     }
+    return result;
+  };
 
-    if (!fallback_set)
+  try_set_pixel_format(requested_pixel_format);
+  if (!pixel_format_set)
+  {
+    for (unsigned int i = 0; i < supported_pixel_formats.nSupportedNum; ++i)
     {
-      printf("No supported PixelFormat was accepted by the camera.\n");
-      MV_CC_CloseDevice(handle);
-      MV_CC_DestroyHandle(handle);
-      return -1;
+      const unsigned int supported_pixel_format =
+          supported_pixel_formats.nSupportValue[i];
+      if (supported_pixel_format == requested_pixel_format)
+        continue;
+      if (try_set_pixel_format(supported_pixel_format) == MV_OK)
+        break;
     }
   }
+
+  if (!pixel_format_set)
+  {
+    printf("No supported PixelFormat was accepted by the camera.\n");
+    MV_CC_CloseDevice(handle);
+    MV_CC_DestroyHandle(handle);
+    return -1;
+  }
+
+  printf("Using PixelFormat value 0x%x.\n", selected_pixel_format);
 
   setParams(handle, params_file);
 
